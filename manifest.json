@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Old Reddit",
+    "version": "1",
+    "description": "redirects to the old reddit to continue using https://redditenhancementsuite.com/",
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "js": [
+                "redirect.js"
+            ],
+            "matches": [
+                "https://www.reddit.com/*"
+            ]
+        }
+    ]
+}
